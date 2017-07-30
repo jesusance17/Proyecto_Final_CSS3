@@ -164,7 +164,7 @@ footer {
 
 #contenido
 {
-	width: 900px;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -208,6 +208,34 @@ width: 50%;
 .redes img{
 	width: 15%;
 }
+
+/*Animación Slidein #Contenido*/
+
+#contenido{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 150%;
+    width: 90%
+  }
+  to {
+    margin-top: -5%;
+    width: 90%;
+		from{
+			margin-top: -5%;
+			width: 90%;
+		}
+		to{
+			margin-top: 0%;
+			width: 90%;
+		}
+  }
+}
+
+/*Fin de la animacion*/
 
 @media screen and (max-width:900px) {
   #contenido{
