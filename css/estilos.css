@@ -42,12 +42,21 @@ nav{
 	text-decoration-line: none;
 }
 
-.datos a:visited, .datos a:link, .datos a:focus, .redes a:visited, .redes a:link, .redes a:focus{
+#imagenes-centrales a, .datos a:visited, .datos a:link, .datos a:focus, .redes a:visited, .redes a:link, .redes a:focus{
 	color: #000000;
+}
+
+#imagenes-centrales{
+	text-align: center;
 }
 
 #img-central{
 	background-color: #82c3a6;
+	width: 100%;
+}
+
+#paisajes, #retratos{
+	background-color: #D5C75F;
 	width: 100%;
 }
 
@@ -76,7 +85,6 @@ div img{
 #paisajes{
 	display: flex;
 	flex-flow: row wrap;
-	background-color: #D5C75F;
 }
 
 #paisajes{
@@ -92,6 +100,49 @@ div [class*="imagen"]{
 #paisajes img{
 	width: 90%;
 	display:block; margin:0 auto 0 auto;
+}
+
+#paisajes img{
+	width: 90%;
+	display:block; margin:0 auto 0 auto;
+}
+
+/*Estilos para retratos*/
+#retratos{
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #D5C75F;
+}
+
+#retratos{
+	margin: 0 auto;
+	width: 100%;
+}
+
+div [class*="imagen"]{
+	min-width: 200px;
+	flex: 1 3 30%;
+}
+
+#retratos img{
+	width: 90%;
+	display:block; margin:0 auto 0 auto;
+}
+
+/*Paisajes y Retratos */
+.imagen1{
+	-webkit-filter: blur(30px);
+	filter: blur(30px);
+}
+
+.imagen3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+.imagen2, .imagen4, .imagen6{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 /* Fin de los estilos para paisajes*/
@@ -173,7 +224,7 @@ width: 50%;
   #encabezado{
     width: 100%;
   }
-  #img-central{
+  #img-central, #paisajes, #retratos{
     width: 100%;
   }
 	#imagenes-centrales{
@@ -188,6 +239,9 @@ width: 50%;
 	#paisajes{
 		display: block;
 	}
+	#retratos{
+		display: block;
+	}
 .pie{
 		display: block;
 	}
@@ -195,6 +249,7 @@ width: 50%;
 		max-width: 100%;
 		text-align: center;
 	}
+
 	header{
 		height: 7em;
 	}
