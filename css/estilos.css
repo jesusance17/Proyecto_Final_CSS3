@@ -1,3 +1,6 @@
+/*
+Estilos del proyecto final CSS3
+*/
 *{
 	margin: 0 auto;
 }
@@ -68,6 +71,30 @@ div img{
 	width: 90%;
 
 }
+
+/*Estilos para los paisajes */
+#paisajes{
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #D5C75F;
+}
+
+#paisajes{
+	margin: 0 auto;
+	width: 100%;
+}
+
+div [class*="imagen"]{
+	min-width: 200px;
+	flex: 1 3 30%;
+}
+
+#paisajes img{
+	width: 90%;
+	display:block; margin:0 auto 0 auto;
+}
+
+/* Fin de los estilos para paisajes*/
 
 #contenido
 {
@@ -158,6 +185,9 @@ width: 50%;
   #img-der{
     width: 100%;
   }
+	#paisajes{
+		display: block;
+	}
 .pie{
 		display: block;
 	}
